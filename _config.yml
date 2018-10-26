@@ -24,7 +24,7 @@ github_username:  ahummons
 
 # Build settings
 markdown: kramdown
-theme: mignight
+theme: midnight
 plugins:
   - jekyll-feed
 
