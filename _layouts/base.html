@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<meta name="description" content="This page was built for LIS786" />
+<meta charset="UTF-8">
+<meta name="author" content="April Hummons" />
+<style>
+       @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+    /* begin Carousel CSS*/
+/* Global */
+body {
+    background: #d2eaf2;
+    padding: 10px;
+  font-family: "Segoe UI";
+}  
+aside {
+  float: left;
+  width: 250px;
+  margin-right: 20px;
+}
+/* Navigation*/
+#menu li {
+  margin: 0 0 3px 0;
+}
+
+#menu a {
+  display: block;
+  *display: inline-block;
+  *width: 240px;
+  text-decoration: none;
+  background: #311c38;
+  color: #bba3c4;
+  padding: 10px 5px;
+  text-transform: uppercase;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+#menu a:hover {
+  color: #d2eaf2;
+  background: #0f5257;
+}
+/* end Navigation*/
+div { word-break: break-all; }
+
+img { max-width:100%; }
+
+a {
+	-webkit-transition: all 150ms ease;
+	-moz-transition: all 150ms ease;
+	-ms-transition: all 150ms ease;
+	-o-transition: all 150ms ease;
+	transition: all 150ms ease; 
+	}
+    a:hover {
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 8 */
+        filter: alpha(opacity=50); /* IE7 */
+        opacity: 0.6;
+        text-decoration: none;
+    }
+
+
+/* Container */
+.container-fluid {
+    background: #bba3c4;
+    margin: 40px auto 10px;
+    padding: 20px 0px;
+    max-width: 960px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Page Header */
+.page-header {
+    background: #311c38;
+    margin: -30px 0px 0px;
+    padding: 20px 40px;
+    border-top: 4px solid #ccc;
+    color: #bba3c4;
+    text-transform: uppercase;
+    }
+    .page-header h3 {
+        line-height: 0.88rem;
+        color: #ffff;
+        }
+
+
+
+/* Thumbnail Box */
+.caption {
+    height: 140px;
+    width: 100%;
+    margin: 20px 0px;
+    padding: 20px;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+.caption .span4, .caption .span8 {
+    padding: 0px 20px;
+}
+.caption .span4 {
+    border-right: 1px dotted #0b3142;
+}
+.caption h3 {
+    color: #0b3142;
+    line-height: 2rem;
+    margin: 0 0 20px;
+    text-transform: uppercase;
+    }
+    .caption p {
+        font-size: 1rem;
+        line-height: 1.6rem;
+        color: #0b3142;
+        }
+        .btn.btn-mini {
+            background:#0f5257;
+            border-radius: 0 0 0 0;
+            color: #fFFf;
+            font-size: 0.63rem;
+            text-shadow: none !important;
+            }
+.carousel-control {
+    top: 33%;
+}
+/* Footer */
+.footer {
+    margin: auto;
+    width: 100%;
+    max-width: 960px;
+    display: block;
+    font-size: 0.69rem;
+    }
+    .footer, .footer a {
+        color: #0b3142;
+        }
+        p.right  { 
+            float: right; 
+            }
+            @media screen and (max-width: 400px) {
+  label {
+    padding: 15px;
+  }
+  aside {
+    width: 100px;
+  }
+  #menu a {
+    font-size: 12px;
+  }
+  header {
+    font-size: 18px;
+  }
+            }
+/* End Carousel CSS*/
+</style>
+<title>Introduction to Graphic Novels</title>
+</head>
+<body>
+  <header>
+    Introduction to Graphic Novels
+  </header>
+  <aside>
+    <nav>
+      <ul id="menu">
+        <li><a href="{{site.baseurl}}/index.html">Home</a></li>
+        <li><a href="{{site.baseurl}}/about.html">About</a></li>
+        <li><a href="{{site.baseurl}}/sched.html">Schedule</a></li>
+        <li><a href="{{site.baseurl}}/readings.html">Readings</a>
+        </li>
+        <li><a href="{{site.baseurl}}/assignments.html">Assignments</a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+  <main>
+{{content}}
+</main>
+<footer class="clearfix">
+    April Hummons copyright 2018
+  </footer>
+</body>
+
+</html>
